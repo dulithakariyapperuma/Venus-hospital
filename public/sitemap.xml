@@ -2,109 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://venushospital.lk/</loc>
+    <loc>https://venus.lk/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/about</loc>
+    <loc>https://venus.lk/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services</loc>
+    <loc>https://venus.lk/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/contact</loc>
+    <loc>https://venus.lk/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/appointments</loc>
+    <loc>https://venus.lk/appointments</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/eye-care</loc>
+    <loc>https://venus.lk/eye-care</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/insurance</loc>
+    <loc>https://venus.lk/insurance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/careers</loc>
+    <loc>https://venus.lk/careers</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/news</loc>
+    <loc>https://venus.lk/news</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/faq</loc>
+    <loc>https://venus.lk/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Service Sub-Pages -->
   <url>
-    <loc>https://venushospital.lk/services/opd</loc>
+    <loc>https://venus.lk/services/opd</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/surgery</loc>
+    <loc>https://venus.lk/services/surgery</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/eye-care</loc>
+    <loc>https://venus.lk/services/eye-care</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/hearing</loc>
+    <loc>https://venus.lk/services/hearing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/laboratory</loc>
+    <loc>https://venus.lk/services/laboratory</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/diagnostics</loc>
+    <loc>https://venus.lk/services/diagnostics</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/rooms</loc>
+    <loc>https://venus.lk/services/rooms</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/dental</loc>
+    <loc>https://venus.lk/services/dental</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/pharmacy</loc>
+    <loc>https://venus.lk/services/pharmacy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/skinclinic</loc>
+    <loc>https://venus.lk/services/skinclinic</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://venushospital.lk/services/accessibility</loc>
+    <loc>https://venus.lk/services/accessibility</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

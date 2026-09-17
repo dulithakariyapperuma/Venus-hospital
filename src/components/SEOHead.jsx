@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 const SITE_NAME = "Venus Hospital";
 const DEFAULT_OG_IMAGE = "/venus-hospital-logo.png";
-const BASE_URL = "https://venushospital.lk";
+const BASE_URL = "https://venus.lk";
 
 /**
  * Reusable SEO head component.

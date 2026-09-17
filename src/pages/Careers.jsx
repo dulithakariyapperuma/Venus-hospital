@@ -130,7 +130,7 @@ const Careers = () => {
     "hiringOrganization": {
       "@type": "Hospital",
       "name": "Venus Hospital (Pvt) Ltd",
-      "sameAs": "https://venushospital.lk",
+      "sameAs": "https://venus.lk",
     },
     "jobLocation": {
       "@type": "Place",
@@ -370,8 +370,8 @@ const Careers = () => {
           </h3>
           <p className="text-muted-foreground mb-4">
             Contact our HR department at{" "}
-            <a href="mailto:careers@venushospital.lk" className="text-primary hover:underline">
-              careers@venushospital.lk
+            <a href="mailto:careers@venus.lk" className="text-primary hover:underline">
+              careers@venus.lk
             </a>{" "}
             or call{" "}
             <a href="tel:+94362222963" className="text-primary hover:underline">
