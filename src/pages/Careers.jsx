@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { Briefcase, Clock, MapPin, Send, Upload, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -119,8 +120,41 @@ const Careers = () => {
     }, 1500);
   };
 
+  // Build JobPosting JSON-LD for each listing
+  const jobPostingJsonLd = jobListings.map((job) => ({
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": job.title,
+    "description": job.description,
+    "employmentType": job.type === "Full-time" ? "FULL_TIME" : "PART_TIME",
+    "hiringOrganization": {
+      "@type": "Hospital",
+      "name": "Venus Hospital (Pvt) Ltd",
+      "sameAs": "https://venushospital.lk",
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "55A Colombo Road",
+        "addressLocality": "Avissawella",
+        "addressCountry": "LK",
+      },
+    },
+  }));
+
   return (
     <Layout>
+      <SEOHead
+        title="Careers at Venus Hospital | Job Openings in Avissawella"
+        description="Join the Venus Hospital team. Explore nursing, laboratory, pharmacy & other healthcare job opportunities in Avissawella, Sri Lanka."
+        canonical="/careers"
+        jsonLd={jobPostingJsonLd}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Careers", url: "/careers" },
+        ]}
+      />
       {/* Hero Banner */}
       <section className="gradient-hero text-white py-20">
         <div className="container mx-auto px-4">

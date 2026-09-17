@@ -25,6 +25,9 @@ const SkinClinic = () => {
             <ServicePageLayout
                 title="Skin Clinic"
                 subtitle="Dr. LJ Cosmetic Clinic - Advanced dermatology and aesthetic treatments"
+                seoTitle="Skin Clinic & Cosmetic Treatments | Venus Hospital Avissawella"
+                seoDescription="Dr. LJ Cosmetic Clinic at Venus Hospital – Hydrafacial, laser hair removal, Botox, dermal fillers, PRP & advanced skin treatments in Avissawella."
+                seoCanonical="/services/skinclinic"
                 icon={Sparkles}
                 image={<ImageCarousel images={carouselImages} autoPlayInterval={3000} />}
                 description="Our Skin Clinic features Dr. LJ Cosmetic Clinic, offering comprehensive dermatological services with state-of-the-art facilities and experienced dermatologists. We provide personalized treatment plans for various skin conditions, advanced cosmetic procedures, and preventive care. From medical dermatology to cutting-edge aesthetic treatments, we are committed to helping you achieve and maintain healthy, beautiful skin."

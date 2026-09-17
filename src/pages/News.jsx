@@ -4,6 +4,7 @@ import { Calendar, ArrowRight, Search, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { newsArticles as localNewsArticles } from "@/data/newsData";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { newsApi } from "@/lib/api";
 
 export default function News() {
@@ -29,6 +30,15 @@ export default function News() {
 
     return (
         <Layout>
+            <SEOHead
+                title="News & Updates | Venus Hospital"
+                description="Stay updated with the latest news, events and health tips from Venus Hospital Avissawella."
+                canonical="/news"
+                breadcrumbs={[
+                    { name: "Home", url: "/" },
+                    { name: "News", url: "/news" },
+                ]}
+            />
             {/* Hero Section */}
             <section className="bg-gradient-to-b from-primary/10 via-secondary/20 to-background py-16 md:py-20">
                 <div className="container mx-auto px-4">

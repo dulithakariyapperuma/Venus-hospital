@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -139,6 +140,15 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title="Contact Us | Venus Hospital Avissawella"
+        description="Get in touch with Venus Hospital. Call 036-2222096, email us, or visit us at 55A Colombo Road, Avissawella. We're here to help 6AM–10PM daily."
+        canonical="/contact"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Contact Us", url: "/contact" },
+        ]}
+      />
       {/* Hero Banner */}
       <section className="gradient-hero text-white py-20">
         <div className="container mx-auto px-4">

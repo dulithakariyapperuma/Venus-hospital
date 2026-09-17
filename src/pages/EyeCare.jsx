@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -124,6 +125,15 @@ const EyeCare = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title="Optical & Eye Care Services | Venus Hospital Avissawella"
+        description="Quality frames, sunglasses & optical services with 25+ years of experience. Visit Venus Hospital's Eye Care Unit for comprehensive vision solutions in Avissawella."
+        canonical="/eye-care"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Eye Care & Optical", url: "/eye-care" },
+        ]}
+      />
       {/* Hero Banner */}
       <section className="gradient-hero text-white py-20">
         <div className="container mx-auto px-4">

@@ -1,3 +1,6 @@
+# Venus Hospital - Robots.txt
+# https://venushospital.lk
+
 User-agent: Googlebot
 Allow: /
 
@@ -12,3 +15,11 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Block admin pages from indexing
+Disallow: /admin/
+Disallow: /admin/login
+Disallow: /admin/dashboard
+
+# Sitemap
+Sitemap: https://venushospital.lk/sitemap.xml

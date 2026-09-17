@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { Heart, Eye, Building2, Users, Award, Clock, Target, Compass, CheckCircle, Stethoscope, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 
 // Slideshow images
@@ -68,6 +69,15 @@ const About = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title="About Venus Hospital | Healthcare in Avissawella Since 2014"
+        description="Learn about Venus Hospital's history, vision & mission. Serving Avissawella with 40+ specialist doctors, advanced eye care & 25 years of optical excellence."
+        canonical="/about"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "About Us", url: "/about" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white py-16 md:py-20">
         <div className="absolute inset-0 opacity-10">

@@ -4,6 +4,7 @@ import { Calendar, ArrowLeft, ArrowRight, User, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getArticleById, getRelatedArticles } from "@/data/newsData";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { newsApi } from "@/lib/api";
 
 export default function NewsArticle() {
@@ -66,6 +67,17 @@ export default function NewsArticle() {
 
     return (
         <Layout>
+            <SEOHead
+                title={`${article.title} | Venus Hospital News`}
+                description={article.excerpt || article.content?.substring(0, 155) || `Read about ${article.title} at Venus Hospital Avissawella.`}
+                canonical={`/news/${id}`}
+                ogImage={article.image}
+                breadcrumbs={[
+                    { name: "Home", url: "/" },
+                    { name: "News", url: "/news" },
+                    { name: article.title, url: `/news/${id}` },
+                ]}
+            />
             {/* Breadcrumb */}
             <div className="bg-secondary/30 py-4">
                 <div className="container mx-auto px-4">

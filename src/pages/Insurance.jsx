@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { Shield, CheckCircle, Phone, Mail, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -48,6 +49,15 @@ const insurancePartners = [
 const Insurance = () => {
   return (
     <Layout>
+      <SEOHead
+        title="Insurance Partners | Venus Hospital Avissawella"
+        description="Venus Hospital accepts Agrahara, Suraksha, Softlogic Life, SLIC, AIA, Union Assurance & more. Check our full list of insurance partners."
+        canonical="/insurance"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Insurance", url: "/insurance" },
+        ]}
+      />
       {/* Hero Banner */}
       <section className="gradient-hero text-white py-20">
         <div className="container mx-auto px-4">

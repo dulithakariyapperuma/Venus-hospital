@@ -27,6 +27,9 @@ const OperationTheatre = () => {
     <ServicePageLayout
       title="Operation Theatre"
       subtitle="Modern surgical facilities for various procedures"
+      seoTitle="Operation Theatre | Venus Hospital Avissawella"
+      seoDescription="State-of-the-art operation theatre with Japanese & German surgical technology. Eye surgeries, general surgery & more at Venus Hospital Avissawella."
+      seoCanonical="/services/surgery"
       image={<ImageCarousel images={carouselImages} autoPlayInterval={3000} />}
       icon={Scissors}
       description="We take pride in possessing the highest standard and sterilized modern operation theatre in the area constructed with ultra modern Japanese and German Technology. Our surgical team follows internationally accepted protocols, supported by advanced equipment and a sterile environment. We perform a wide range of surgical procedures with utmost precision and care, ensuring patient safety and successful outcomes."

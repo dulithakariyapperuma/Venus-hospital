@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { BookingModal } from "@/components/BookingModal";
@@ -107,6 +108,15 @@ const Services = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title="Medical Services | Venus Hospital Avissawella"
+        description="Explore our comprehensive medical services: OPD, surgery, eye care, hearing, laboratory, diagnostics, dental, pharmacy & more — all under one roof in Avissawella."
+        canonical="/services"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+        ]}
+      />
       {/* Hero Banner */}
       <section className="gradient-hero text-white py-20">
         <div className="container mx-auto px-4">

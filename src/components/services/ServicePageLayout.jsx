@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { BookingModal } from "@/components/BookingModal";
@@ -44,6 +45,9 @@ const ServicePageLayout = ({
   banners = [],
   brandAffiliation = null,
   faqs = [],
+  seoTitle,
+  seoDescription,
+  seoCanonical,
 }) => {
   const [currentBanner, setCurrentBanner] = useState(0);
 
@@ -58,6 +62,16 @@ const ServicePageLayout = ({
   }, [banners.length]);
   return (
     <Layout>
+      <SEOHead
+        title={seoTitle || `${title} | Venus Hospital Avissawella`}
+        description={seoDescription || `${subtitle}. Professional ${title.toLowerCase()} services at Venus Hospital, Avissawella. Book an appointment today.`}
+        canonical={seoCanonical}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: title, url: seoCanonical || "/services" },
+        ]}
+      />
       {/* Hero Banner */}
       <section className="gradient-hero text-white py-20">
         <div className="container mx-auto px-4">
