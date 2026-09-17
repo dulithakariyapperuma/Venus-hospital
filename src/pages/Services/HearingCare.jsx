@@ -7,6 +7,9 @@ const HearingCare = () => {
     <ServicePageLayout
       title="Hearing Care Unit"
       subtitle="Professional hearing assessments and support"
+      seoTitle="Hearing Care & ENT Services | Venus Hospital Avissawella"
+      seoDescription="Professional hearing assessments, hearing aids & ENT consultations at Venus Hospital Avissawella. International hearing aid brands with expert servicing."
+      seoCanonical="/services/hearing"
       image="https://res.cloudinary.com/doqyzcyl5/image/upload/v1770487879/AdobeStock_1822017679_lzxzjx.jpg"
       description="The Hearing Care Unit at Venus Hospital provides professional hearing assessments and support services. We assist patients in identifying hearing-related conditions and guide them toward appropriate treatment. Our team uses modern diagnostic equipment to evaluate hearing health and provide personalized recommendations for hearing improvement. Our hearing unit offers advanced digital hearing aids from trusted international brands."
       features={[

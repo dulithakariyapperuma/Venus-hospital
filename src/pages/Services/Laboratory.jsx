@@ -10,6 +10,9 @@ const Laboratory = () => {
     <ServicePageLayout
       title="Laboratory Services"
       subtitle="Wide range of medical tests with accuracy"
+      seoTitle="Laboratory Services | Venus Hospital Avissawella"
+      seoDescription="Comprehensive lab testing with modern equipment and same-day results. Blood tests, urine analysis, biochemistry & more at Venus Hospital Avissawella."
+      seoCanonical="/services/laboratory"
 
       icon={FlaskConical}
       image="https://res.cloudinary.com/doqyzcyl5/image/upload/v1767678731/IMG_5764_bmwnho.jpg "

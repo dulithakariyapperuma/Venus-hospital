@@ -32,6 +32,9 @@ const EyeCareServices = () => {
     <ServicePageLayout
       title="Eye Care Unit"
       subtitle="Comprehensive eye diagnostics and treatments"
+      seoTitle="Eye Care Unit | Venus Hospital Avissawella"
+      seoDescription="Complete eye care unit with OCT, Biometry, Visual Field Tests & laser treatments. SLOA-registered optometrists & specialist eye surgeons in Avissawella."
+      seoCanonical="/services/eye-care"
       image={<ImageCarousel images={carouselImages} autoPlayInterval={2000} />}
       icon={Eye}
       description="We are proud to host the exceptional services of renowned Eye surgeons from across the island at Venus Hospital. Our skilled and experienced Ophthalmic Surgical Team provides the best possible service to patients seeking eye care and surgical procedures. An unmatched dedicated service is rendered to you in providing state-of-the-art methods of eye testing, visual aids, and hearing aids to the general public."

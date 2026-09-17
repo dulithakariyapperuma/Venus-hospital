@@ -43,6 +43,9 @@ const RoomsWards = () => {
     <ServicePageLayout
       title="Rooms & Wards"
       subtitle="Comfortable inpatient care facilities"
+      seoTitle="Hospital Rooms & Wards | Venus Hospital Avissawella"
+      seoDescription="Comfortable private rooms & wards with mountain views at Venus Hospital. Air-conditioned rooms, 24/7 nursing care & modern patient amenities in Avissawella."
+      seoCanonical="/services/rooms"
       icon={Bed}
       image={<ImageCarousel images={roomImages} />}
       description="Patient comfort and recovery are at the heart of our inpatient care. Venus Hospital provides clean, well-maintained rooms and wards designed to create a calm and healing environment. The perpetual vigilance and the diligence of a cadre of specially trained and highly skilled nursing staff backed, supervised and trained by government experienced senior nursing staff is delivering compassionate and considerate assistance until you become totally healthy."

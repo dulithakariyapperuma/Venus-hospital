@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { ChevronDown, ChevronUp, Phone, Eye, Ear, FlaskConical, Stethoscope, Building2 } from "lucide-react";
 
 const faqCategories = [
@@ -189,8 +190,34 @@ function FAQItem({ question, answer }) {
 }
 
 const FAQ = () => {
+    // Build FAQPage JSON-LD from all categories
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqCategories.flatMap((cat) =>
+            cat.faqs.map((faq) => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.answer.replace(/\*\*/g, ""),
+                },
+            }))
+        ),
+    };
+
     return (
         <Layout>
+            <SEOHead
+                title="Frequently Asked Questions | Venus Hospital"
+                description="Find answers to common questions about Venus Hospital's services, insurance, appointments, eye care, hearing unit, laboratory, dental and more."
+                canonical="/faq"
+                jsonLd={faqJsonLd}
+                breadcrumbs={[
+                    { name: "Home", url: "/" },
+                    { name: "FAQ", url: "/faq" },
+                ]}
+            />
             {/* Hero Banner */}
             <section className="gradient-hero text-white py-20">
                 <div className="container mx-auto px-4">
